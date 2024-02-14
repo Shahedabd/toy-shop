@@ -1,0 +1,734 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+/* main ...... */
+.navbar{
+    width: 100%;
+    height: 72px;
+    background-color: #009000;
+    position: fixed;
+    z-index: 2;
+    overflow: auto;
+}
+.navbar img{
+    width: 100px;
+    height: 60px;
+    margin-left: 155px;
+    margin-right: 285px;
+    margin-top: 7px;
+    float: left;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    margin-top: 23px;
+    font-weight: bold;
+    font-size: 21px;
+}
+.navbar ul li a:hover{
+     color: rgb(1, 63, 1);
+}
+.mainbackground{
+    background-image: url("../img/istock-1173451822-1170x600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 72px;
+    margin-bottom: 137px;
+}
+.text{
+    text-align: center;
+    color: #009000;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.text p{
+    margin-top: -7px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.text button{
+    padding: 15px;
+    background-color: #009000;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.text button a{
+     color: white;
+     text-decoration: none;
+}
+.text button:hover{
+    background-color: rgba(6, 92, 6, 0.918);
+}
+
+/* About ...... */
+.container{
+    width: 80%;
+    margin: 65px auto;
+}
+.about{
+    text-align: center;
+    overflow: auto;
+}
+.headings{
+    font-size: 40px;
+    text-align: center;
+}
+.headings span{
+     color: #009000;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: black;
+    margin: 10 auto 50px;
+    border-radius: 15%;
+}
+.aboutdiv1{
+    width: 30%;
+    height: 300px;
+    border: 1px black dashed;
+    float: left;
+    color: rgb(20, 15, 97);
+    padding: 12px;
+}
+.aboutdiv2{
+    width: 30%;
+    height: 300px;
+    border: 1px black dashed;
+    float: left;
+    color: rgb(107, 14, 95);
+    margin: 0 5%;
+    padding: 12px;
+}
+.aboutdiv3{
+    width: 30%;
+    height: 300px;
+    border: 1px black dashed;
+    float: left;
+    padding: 12px;
+    color: rgb(129, 13, 13);
+}
+.about h2{
+    margin-top: 15px;
+}
+.about p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.about button{
+    width: 110px;
+    height: 35px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.about button a{
+    text-decoration: none;
+    color: white;
+}
+.aboutdiv1 button{
+    background-color: rgb(20, 15, 97);
+}
+.aboutdiv2 button{
+    background-color: rgb(107, 14, 95);
+}
+.aboutdiv3 button{
+    background-color: rgb(129, 13, 13);
+}
+.aboutdiv{
+    position: relative;
+}
+.aboutdiv::before{
+    content: "";
+    height: 0%;
+    width: 0%;
+    background-color: rgba(128, 128, 128, 0.425);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.aboutdiv:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.aboutdiv:hover h2{
+    color: #009000;
+}
+.aboutdiv:hover button{
+    background-color: #009000;
+}
+
+/* Glary ...... */
+.Glary{
+    overflow: auto;
+}
+.Glarydiv{
+    position: relative;
+}
+.Glarydiv11{
+    width: 30%;
+    height: 275px;
+    border: 1px black dashed;
+    float: left;
+    padding: 12px;
+    margin-bottom: 40px;
+    border-radius: 5%;
+}
+.Glarydiv12{
+    width: 30%;
+    height: 275px;
+    border: 1px black dashed;
+    float: left;
+    margin: 0 5%;
+    padding: 12px;
+    margin-bottom: 40px;
+    border-radius: 5%;
+}
+.Glarydiv13{
+    width: 30%;
+    height: 275px;
+    border: 1px black dashed;
+    float: left;
+    padding: 12px;
+    margin-bottom: 40px;
+    border-radius: 5%;
+}
+.glaryoverlay{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.6);
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    border-radius: 5%;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.glaryoverlay h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.glaryoverlay p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.glaryoverlay i{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10%;
+    text-align: center;
+    margin: 6px 8px 6px;
+    font-size: 25px;
+    }
+.overlaytext{
+    margin-top: 80px;
+    color: white;
+}
+.Glarydiv:hover .glaryoverlay{
+    height: 100%;
+    opacity: 1;
+}
+
+/* Services ...... */
+.Servicesdiv{
+    overflow: auto;
+}
+.Servicesdivs{
+    float: left;
+    width: 30%;
+    height: 220px;
+    border: 1px black dashed;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+.Servicesdivs2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Servicesdivs h2{
+    font-size: 28px;
+    color: #009000;
+    margin-bottom: 5px;
+    margin-left: 22px;
+}
+.Servicesdivs p{
+    font-size: 21px;
+    margin-left: 22px;
+}
+.Servicesdivs i{
+    color: #009000;
+    position: absolute;
+    left: 8px;
+    top: 58px;
+}
+.Servicesdivs::after{
+    content: "";
+    background-color: rgba(128, 128, 128, 0.425);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+}
+.Servicesdivs:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.Servicesdivs:hover h2{
+    color: black;
+}
+.Servicesdivs:hover i{
+    color: black;
+}
+.Servicesdivs:hover p{
+    color: #009000;
+}
+
+/* choose ...... */
+.choose{
+    width: 100%;
+    height: 550px;
+    background-color: rgba(0, 128, 0, 0.4);
+    margin-bottom: 65px;
+}
+.choosediv{
+    overflow: auto;
+}
+.choosediv1{
+    width: 65%;
+    float: left;
+}
+.choosediv1 h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 65px;
+}
+.choosediv1 h2 span{
+    color: #009000;
+}
+.whyline{
+    width: 75px;
+    height: 3px;
+    background-color: black;
+    border-radius: 15%;
+}
+#s{
+    color: #009000;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+#s2{
+    font-size: 20px;
+    margin-bottom: 10px;    
+}
+.choosediv2{
+    width: 35%;
+    float: left;
+}
+.choosediv2 img{
+    margin-top: 65px;
+}
+.circle{
+    margin-left: 160px;
+}
+.circle div{
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: black;
+   float: left;
+   margin-left: 8px;
+   margin-top: 15px;
+}
+#colorcircle{
+    background-color: #009000;
+}
+.circle div:hover{
+    background-color: #009000;
+}
+
+/* section ...... */
+.section{
+    width: 100%;
+    height: 370px;
+    background-image: url("../imgaes/pexels-media-163064.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectiondivs{
+    overflow: auto;
+    text-align: center;
+}
+.sectiondiv{
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 140px;
+}
+.sectiondiv .w{
+  color: white;
+  font-size: 23px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.sectiondiv i{
+    color: #009000;
+    margin-top: 19px;
+}
+.cc{
+    width: 100px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px #009000 dashed;
+    margin: auto;
+    transition: 0.5s;
+}
+.cc:hover{
+    background-color: white;
+    border: none;
+    margin-top: -8px;
+    margin-bottom: 23px;
+}
+
+/* Pricing ...... */
+.Pricing{
+    overflow: auto;
+    text-align: center;
+}
+.Pricingdiv{
+    float: left;
+    width: 30%;
+    height: 390px;
+    border: 1px black dashed;
+    position: relative;
+}
+.Pricingdiv2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Pricingdiv h2{
+    font-size: 28px;
+    color: #009000;
+    margin-top: 25px;
+}
+.c{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px #009000 solid;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.c #d{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.c #Month{
+    color: #009000;
+    font-size: 24px;
+    margin-top: 16px;
+}
+.Pricingdiv #p{
+    color: gray;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.Pricingdiv button{
+    border: 1px #009000 solid;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #009000;
+    transition: 0.7s;
+}
+.Pricingdiv button:hover{
+    background-color: #009000;
+    color: white;
+}
+.Pricingdiv::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 50%;
+   height: 0%;
+   background-color: rgba(128, 128, 128, 0.425);
+   transition: 0.5s;
+   z-index: -1;
+}
+.Pricingdiv::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 0%;
+    background-color: rgba(128, 128, 128, 0.425);
+    transition: 0.5s;
+    z-index: -1;
+}
+.Pricingdiv:hover::before{
+    height: 100%;
+}
+.Pricingdiv:hover::after{
+    height: 100%;
+}
+
+/* me ...... */
+.me{
+    width: 100%;
+    height: 335px;
+    background-image: url("../imgaes/pexels-media-220137.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mediv{
+ overflow: auto;
+}
+.to{
+    display: inline-block;
+    margin-left: 20px;
+}
+.mediv h3{
+    font-weight: bold;
+    font-size: 29px;
+    color: white;
+}
+.mediv .par{
+    font-weight: bold;
+    color: #009000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.mediv .par2{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+.mediv img{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.mediv1{
+    width: 40%;
+    float: left;
+    margin-right: 20%;
+    margin-top: 110px;
+}
+.mediv2{
+    width: 40%;
+    float: left;
+    margin-top: 110px;
+}
+
+/* Team ...... */
+.teamdivs{
+    overflow: auto;
+    text-align: center;
+}
+.teamdiv{
+  width: 30%;
+  height: 270px;
+  background-color: rgba(0, 128, 0, 0.4);
+  float: left;
+  padding: 12px;
+  position: relative;
+}
+.teamdiv2{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.teamdiv h2{
+    font-size: 25px;
+    transition: 1s;
+}
+.teamdiv p{
+    font-size: 18px;
+    color: #009000;
+    transition: 1s;
+}
+.team-img{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+.teamdiv::after{
+    content: "";
+    background-color: rgba(128, 128, 128, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.team-overlay{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.6);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 3;
+}
+.team-overlay i{
+    display: block;
+    background-color: #009000b7;
+    padding: 5px;
+    margin-left: auto;
+    width: 40px;
+    color: white;
+}
+.teamdiv:hover .team-overlay{
+  opacity: 1;
+}
+.teamdiv:hover::after{
+    height: 100%;
+  }
+  .teamdiv:hover p{
+   color: black; 
+ }
+ .teamdiv:hover h2{
+    color: #009000; 
+  }
+
+/* news ...... */
+.newsdivs{
+ overflow: auto;
+}
+.newsdiv{
+    width: 30%;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+.newsdiv2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.newsdiv h3{
+   font-size: 27px;
+   margin-top: 22px;
+}
+.newsdiv p{
+    font-size: 18px;
+    margin-top: 22px;
+    color: gray;
+ }
+ .newsdiv span{
+    margin-left: 10px;
+ }
+ .newsdiv span i{
+    color: #009000;
+ }
+ .imgg{
+   height: 60%;
+   position: relative;
+ }
+ .imgg2{
+    height: 40%;
+    position: relative;
+  }
+ .newsdiv button{
+    width: 105px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #009000;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 22px;
+  }
+  .newsdiv button:hover{
+     background-color: white;
+     color: #009000;
+  }
+  .newsdiv::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background-color: rgba(128, 128, 128, 0.425);
+    transition: 0.5s;
+  }
+  .newsdiv:hover::after{
+    height: 60%;
+    width: 100%;
+  }
+  .newsdiv::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    width: 0%;
+    background-color: rgba(128, 128, 128, 0.425);
+    transition: 0.5s;
+    z-index: -1;
+  }
+  .newsdiv:hover::before{
+    height: 40%;
+    width: 100%;
+  }
+
+/* footer ...... */
+.footer{
+    width: 100%;
+    height: 290px;
+    background-color: #009000;
+    text-align: center;
+    color: white;
+}
+.footer img{
+    margin-bottom: 14px;
+    margin-top: 34px;
+}
+.footer i{
+    margin-bottom: 12px;
+    padding: 5px;
+}
+.footer a{
+    color: white;
+}
